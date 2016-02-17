@@ -2,6 +2,10 @@ package com.company.app.threadsafe;
 
 public class EduardoAndMonicaJob implements Runnable {
   
+  
+  /**
+   * Will be accessed for more than one thread
+   */
   private BankAccount account = new BankAccount();
 
   @Override
